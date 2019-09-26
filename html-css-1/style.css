@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.top-1 {
+  width: 100vw;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  color: white;
+}
+.top-2 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.big {
+  background-color: black;
+  width: 100vw;
+  height: 300px;
+  color: yellow;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  font-size: 50px;
+}
+.parent {
+  background-color: rgb(250, 248, 245);
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.parent > div {
+  width: 20px;
+  height: 250px;
+  background-color: rgb(130, 243, 237);
+  margin: 10px;
+  border-radius: 20px;
+}
+.parent > div:nth-child(1) {
+  align-self: flex-end;
+  flex: 3;
+}
+.parent > div:nth-child(2) {
+  align-self: flex-end;
+  flex: 3;
+}
+.parent > div:nth-child(3) {
+  align-self: center;
+  flex: 3;
+}
+
+.orange {
+  display: flex;
+  justify-content: center;
+}
+.orange > div {
+  width: 400px;
+  height: 250px;
+  background-color: rgb(245, 212, 153);
+  margin: 10px;
+}
+.orange > div:nth-child(1) {
+  align-self: flex-end;
+  flex: 3;
+}
+.orange > div:nth-child(2) {
+  align-self: flex-end;
+  flex: 3;
+}
+.bottom {
+  background-color: rgb(158, 158, 216);
+  width: 100vw;
+  height: 100px;
+
+  display: flex;
+  flex-direction: row;
+}
+.media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
